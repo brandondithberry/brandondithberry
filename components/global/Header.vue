@@ -2,8 +2,8 @@
   <header>
     <nav>
       <ul>
-        <li><a href="/work">Work</a></li>
-        <li><a href="/blog">Blog</a></li>
+        <li><a href="/work">About</a></li>
+        <li><a href="/blog">Work</a></li>
         <li><a href="email:brandondithberry@gmail.com">Connect</a></li>
       </ul>
     </nav>

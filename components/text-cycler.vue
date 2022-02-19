@@ -5,10 +5,9 @@
 export default {
   name: 'text-cycler',
   data() {
-    const self = this
     setInterval(() => {
-      self.currentIndex = ++self.currentIndex % self.items.length
-    }, self.delay)
+      this.currentIndex = ++this.currentIndex % this.items.length
+    }, this.delay)
     return { currentIndex: 0 }
   },
   computed: {
@@ -23,7 +22,7 @@ export default {
       default: ['No items passed to text-cycler. The items prop was null or undefined'],
     },
     delay: {
-      default: 2000,
+      default: 1500,
     },
     stop: {
       default: false,

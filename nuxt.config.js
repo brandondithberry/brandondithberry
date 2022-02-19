@@ -1,5 +1,3 @@
-import postcssPresetEnv from 'postcss-preset-env'
-import postcssEasingGradients from 'postcss-easing-gradients'
 import * as SITE_INFO from './content/site/info.json'
 import { COLOR_MODE_FALLBACK } from './utils/globals.js'
 
@@ -85,8 +83,8 @@ export default {
     postcss: {
       plugins: {
         'postcss-import': true,
-        'postcss-nested': {},
         'tailwindcss/nesting': {},
+        'postcss-nested': {},
       }
     },
     /*
