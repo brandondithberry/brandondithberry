@@ -13,7 +13,7 @@
 
 <style lang="postcss" scoped>
 #intro {
-  @apply flex w-full h-screen place-content-center place-items-center flex-col p-5 text-center;
+  @apply flex w-full h-[80vh] place-content-center place-items-center flex-col p-5 text-center z-50;
 
   .buttons {
     @apply flex mt-10 gap-5;
