@@ -1,13 +1,40 @@
 <template>
   <main>
-    <section class="self-center flex flex-col flex-1 items-center justify-center">
-      <h1 class="title text-center">Nuxt — Tailwind — Netlify CMS</h1>
-      <h2 class="subtitle text-center">Boilerplate</h2>
-    </section>
-
-    <section class="mt-8">
-      <h3 class="text-primary-600 dark:text-primary-400 max-w-5xl mx-auto">Latest blog post</h3>
-      <posts post-type="blog" :amount="1" />
+    <section id="intro">
+      <h2 class="text-6xl">I AM A</h2>
+      <h1><text-cycler class="text-7xl font-normal" :items="items" /></h1>
     </section>
   </main>
 </template>
+
+<style lang="postcss" scoped>
+#intro {
+  @apply flex w-full h-screen place-content-center place-items-center flex-col;
+
+  h1,
+  h4 {
+    @apply block;
+  }
+}
+</style>
+
+<script>
+import textCycler from '~/components/text-cycler.vue'
+export default {
+  data() {
+    return {
+      items: [
+        'Front-End Developer',
+        'UX Designer',
+        'Data Analyst',
+        'DevOps Engineer',
+        'Business Consultant',
+        'Marketing Specialist',
+      ],
+    }
+  },
+  components: {
+    textCycler,
+  },
+}
+</script>
