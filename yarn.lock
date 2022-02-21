@@ -1449,10 +1449,10 @@
     rollup-plugin-node-polyfills "^0.2.1"
     rollup-plugin-terser "^7.0.2"
 
-"@netlify/plugins-list@^6.11.0":
-  version "6.11.0"
-  resolved "https://registry.yarnpkg.com/@netlify/plugins-list/-/plugins-list-6.11.0.tgz#7f2d3821558481de071ff4b0abc014907cc4df3d"
-  integrity sha512-b6+htKVooVnUPbq2zlCPUcWJSvR18a20cl1W3MS3EThEbXM/CCQWcCEqjwk+Q5VCH2hoJoaHlLhO/lIHpwn8Ig==
+"@netlify/plugins-list@^6.11.0", "@netlify/plugins-list@^6.12.0":
+  version "6.12.0"
+  resolved "https://registry.yarnpkg.com/@netlify/plugins-list/-/plugins-list-6.12.0.tgz#46e420a57aad4c483d2b73ffab25cec69ca98ae3"
+  integrity sha512-h9qFET+jiLeQQvK/NUNE0qaX/XhGKObhvIyOymhXgq2qf7vd+np842m8hz9sVbA1sJeVulk5CS89adcV6+ATgQ==
 
 "@netlify/routing-local-proxy-darwin-arm64@^0.34.1":
   version "0.34.1"
@@ -10154,17 +10154,17 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@^9.6.5:
-  version "9.6.5"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-9.6.5.tgz#0755ceae37af72ac49a84dc9ab16b2c4e406fc36"
-  integrity sha512-WMb6t+172Zq50wo7pt2rZb/TNG8NoUje21jjT8jHLIDMlSkJLd3kcZiNws61m/m+d5mCB+T8inGFU30XHybdug==
+netlify-cli@^9.6.6:
+  version "9.6.6"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-9.6.6.tgz#e338edb6a7e1fdd7c0029d50de4c4719c77f6b94"
+  integrity sha512-5Rf6BJ1beJsCudzls7+DnoI+D+KIzPLoy6ayNeLz8SV7fTEVGWJEFiIECfzJYcRkAjQ2P1+MT6ZA/IzoFHUe8g==
   dependencies:
     "@netlify/build" "^26.3.3"
     "@netlify/config" "^17.0.9"
     "@netlify/framework-info" "^9.0.0"
     "@netlify/local-functions-proxy" "^1.1.1"
     "@netlify/plugin-edge-handlers" "^3.0.6"
-    "@netlify/plugins-list" "^6.11.0"
+    "@netlify/plugins-list" "^6.12.0"
     "@netlify/routing-local-proxy" "^0.34.1"
     "@netlify/zip-it-and-ship-it" "^5.8.0"
     "@octokit/rest" "^18.0.0"
