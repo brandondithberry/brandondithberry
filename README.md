@@ -16,7 +16,6 @@ An opinionated starter template for a quick start with the following technologie
 - PostCSS (no SCSS)
 - Tailwind
 - PurgeCSS (removes unused CSS-selectors)
-- Dark mode & ColorModePicker (Set to "dark mode first")
 - PWA (install website as standalone app)
 - Netlify CMS (no need for a separate server)
 - Prettier

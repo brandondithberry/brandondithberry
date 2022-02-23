@@ -48,25 +48,32 @@ collections:
     # editor:
     #   preview: true
     fields:
-      - { label: 'Created Date', name: 'createdAt', widget: 'datetime', date_format: "YYYY-MM-DD", time_format: false }
+      - { label: 'Created Date', name: 'createdAt', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: false }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }
-  - name: 'projects'
-    label: 'Projects'
-    label_singular: 'Project'
-    folder: 'content/projects'
+  - name: 'work'
+    label: 'Work'
+    label_singular: 'Work'
+    folder: 'content/work'
     create: true
     format: 'frontmatter'
     slug: '{{slug}}'
-    preview_path: 'projects/{{slug}}'
+    preview_path: 'work/{{slug}}'
     fields:
       - {
-          label: 'Project Category',
+          label: 'Work Category',
           name: 'category',
           widget: 'select',
-          default: 'animals',
-          options: [{ label: 'Animals', value: 'animals' }, { label: 'Food', value: 'food' }],
+          default: 'front-end',
+          options:
+            [
+              { label: 'Front End Development', value: 'front-end' },
+              { label: 'Graphic Design', value: 'design' },
+              { label: 'Data Analysis', value: 'data' },
+              { label: 'Marketing', value: 'marketing' },
+              { label: 'DevOps', value: 'devops' },
+            ],
         }
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Description', name: 'description', widget: 'string', required: false }

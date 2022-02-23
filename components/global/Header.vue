@@ -18,20 +18,21 @@ export default {
 
 <style lang="postcss" scoped>
 header {
-  @apply flex w-full h-auto place-content-center place-items-center p-5 bottom-0 lg:top-0;
+  @apply fixed flex w-full h-16 justify-center justify-items-center bg-gray-200 border-t-2 border-gray-900 z-50 opacity-0 p-4 bottom-0 lg:top-0 bg-gray-200 border-b-2;
+  animation: fadeIn 1s ease 2.5s forwards;
 
   nav ul {
-    @apply flex w-full place-content-center gap-28;
+    @apply flex w-full place-content-center gap-20;
 
     li {
-      @apply text-center text-2xl;
+      @apply text-center text-xl;
 
       a {
-        @apply text-gray-800 pb-2;
+        @apply text-gray-900;
       }
 
       a:hover {
-        @apply border-b-2 border-gray-800;
+        @apply text-gray-400;
       }
     }
   }
