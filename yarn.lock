@@ -2009,10 +2009,10 @@
     webpack-node-externals "^3.0.0"
     webpackbar "^4.0.0"
 
-"@nuxtjs/color-mode@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/color-mode/-/color-mode-3.0.0.tgz#c5ba5c24f23148bfc5c8b4af02c5f7f1a0186a06"
-  integrity sha512-R3GxWl9+wOx/kAB9QLOJYW35knnRiKfRTTt+tkKyxsW0QQRiAAURZHr4BoJZeQtaEoneuRmJV99/p07/ehJcUw==
+"@nuxtjs/color-mode@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/color-mode/-/color-mode-3.0.2.tgz#17110d78864ad00ce524f7fc2d379d8c28ff765a"
+  integrity sha512-JgppnxOsVe2T/UGj0xjok/8TKDI27bRuhNh+Qrvr0FsS90Mty2acZLLN0lkrOTV0WLrpnTgN7mZCrgCWmhvziA==
   dependencies:
     "@nuxt/kit" "npm:@nuxt/kit-edge@latest"
     defu "^5.0.0"
