@@ -2,9 +2,8 @@
   <header>
     <nav>
       <ul>
-        <li><a href="/work">Work</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/connect">Connect</a></li>
+        <li><a href="https://behance.net/brandondithberry" target="_blank">Portfolio</a></li>
+        <li><a href="https://linkedin.com/in/brandondithberry" target="_blank">LinkedIn</a></li>
       </ul>
     </nav>
   </header>

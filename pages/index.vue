@@ -3,25 +3,7 @@
     <section id="intro">
       <div class="box">
         <h1><b>Hi, I'm Brandon Dith-Berry</b></h1>
-        <h1>
-          <span v-for="item in items" :key="item">{{ item }} · </span>
-        </h1>
-      </div>
-      <a href="#story" class="down"><span>•</span></a>
-    </section>
-    <section id="story">
-      <p>
-        I’m what some would call...a unicorn. What’s a “unicorn” you might ask? According to Webster’s Dictionary
-        definition: <i>something unusual, rare, or unique.</i><br /><br />I was hired by a creative agency right out of
-        high school, worked as a crisis stablization counselor for a time, become the Senior IT Engineer at a large
-        manufacturing corporation, ran the marketing for a well known health bread company, lead the production team for
-        a mobile church, and now I'm a DevOps/RevOps developer and technologist at one of the top RevOps companies in
-        the nation...all without a degree.<br /><br />How did I get here? What's my work like? Am I just a "Jack of all
-        trades, master of none"?
-      </p>
-      <div class="buttons">
-        <a href="#experience" class="btn">View Work</a>
-        <a href="#experience" class="btn">View Experience</a>
+        <h1><a href="https://www.origin63.com/" target="_blank">Senior HubSpot Consultant</a> • Front-End Developer • <a href="https://www.youtube.com/watch?v=IUrvnLDrrf0" target="_blank">Ark Creative Songwriter</a> • Alesian Apparel Founder • Husband & Father</h1>
       </div>
     </section>
   </main>
@@ -81,13 +63,10 @@ export default {
   data() {
     return {
       items: [
+        'Business Consultant',
         'Front-End Developer',
-        'UX Designer',
-        'Data Analyst',
-        'DevOps Engineer',
-        'Marketing Specialist',
-        'Storyteller',
-        'Songwriter',
+        'Ark Creative Songwriter',
+        'Husband & Father'
       ],
     }
   },

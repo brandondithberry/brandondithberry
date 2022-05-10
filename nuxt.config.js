@@ -85,7 +85,7 @@ export default {
         'postcss-import': true,
         'tailwindcss/nesting': {},
         'postcss-nested': {},
-      }
+      },
     },
     /*
      ** You can extend webpack config here
