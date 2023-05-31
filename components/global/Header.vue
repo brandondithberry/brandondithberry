@@ -1,39 +1,63 @@
 <template>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="https://behance.net/brandondithberry" target="_blank">Portfolio</a></li>
-        <li><a href="https://linkedin.com/in/brandondithberry" target="_blank">LinkedIn</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="header-container">
+      <div class="header-menu header-menu--left">
+        <nav>
+          <ul class="header-menu-list">
+            <li><a href="/">Work</a></li>
+            <li><a href="https://open.spotify.com/artist/5nJDjIy1Ge6CrUl7THNjyN" target="_blank">Music</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-logo">
+        <img src="img/logo.png" alt="Logo" />
+      </div>
+      <div class="header-menu header-menu--right">
+        <nav>
+          <ul class="header-menu-list">
+            <li><a href="#">About</a></li>
+            <li><a href="https://calendar.app.google/eAkxP4BTiRYuW8db6" target="_blank">Book A Call</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 </template>
 
-<script>
-export default {
-  name: 'Header',
-}
-</script>
-
 <style lang="postcss" scoped>
-header {
-  @apply fixed flex w-full h-16 justify-center justify-items-center bg-gray-200 border-t-2 border-gray-900 z-50 opacity-0 p-4 bottom-0 lg:top-0 bg-gray-200 border-b-2;
-  animation: fadeIn 1s ease 2.5s forwards;
+.header {
+  @apply py-4;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+}
 
-  nav ul {
-    @apply flex w-full place-content-center gap-20;
+.header-container {
+  @apply container mx-auto flex items-center;
+}
 
-    li {
-      @apply text-center text-xl;
+.header-menu {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
 
-      a {
-        @apply text-gray-900;
-      }
+.header-menu--left {
+  @apply pr-10;
+  justify-content: flex-end;
+}
 
-      a:hover {
-        @apply text-gray-400;
-      }
-    }
-  }
+.header-menu--right {
+  @apply pl-10;
+  justify-content: flex-start;
+}
+
+.header-menu-list {
+  @apply flex space-x-8;
+}
+
+.header-logo img {
+  width: 100%;
+  height: 50px;
 }
 </style>

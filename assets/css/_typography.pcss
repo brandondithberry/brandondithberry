@@ -28,7 +28,7 @@
     @apply font-sans
       font-normal
       text-3xl
-      leading-normal
+      leading-relaxed
       tracking-tight;
   }
 
@@ -42,7 +42,7 @@
 
   h3 {
     @apply font-sans
-      font-bold
+      font-normal
       text-xl
       leading-tight;
   }
@@ -70,7 +70,7 @@
 
   p {
     color: var(--text);
-    @apply font-sans leading-normal transition-colors duration-200 ease-in-out;
+    @apply font-sans leading-relaxed transition-colors duration-200 ease-in-out;
 
     & + h1,
     & + h2,
@@ -96,12 +96,12 @@
 
   .title {
     color: var(--text-secondary);
-    @apply block text-2xl font-sans font-bold transition-colors duration-200 ease-in-out;
+    @apply block text-2xl font-sans font-normal transition-colors duration-200 ease-in-out;
   }
 
   .subtitle {
     color: var(--text);
-    @apply block text-xl font-sans font-bold transition-colors duration-200 ease-in-out;
+    @apply block text-xl font-sans font-normal transition-colors duration-200 ease-in-out;
   }
 
   .nuxt-content {
@@ -141,7 +141,7 @@
     }
     & h3 {
       @apply text-lg
-        font-bold;
+        font-normal;
     }
     & img {
       @apply mx-auto my-4 rounded;
@@ -150,7 +150,7 @@
     & ol > li,
     & ul > li {
       color: var(--text);
-      @apply font-sans leading-normal transition-colors duration-200 ease-in-out;
+      @apply font-sans leading-relaxed transition-colors duration-200 ease-in-out;
     }
     & > ol {
       @apply list-decimal grid gap-y-2 my-4 ml-4;
@@ -207,7 +207,7 @@
 
   @screen md {
     h1 {
-      @apply text-4xl leading-normal;
+      @apply text-4xl leading-relaxed;
     }
 
     h2 {
