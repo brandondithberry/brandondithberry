@@ -1,39 +1,39 @@
 {
-    "name": "ntn-boilerplate",
-    "license": "MIT",
-    "version": "2.1.2",
-    "description": "Nuxt-Tailwind-NetlifyCMS boilerplate",
-    "author": "Sven Parker <hello+dev@svenparker.com> (https://svenparker.com)",
-    "scripts": {
-        "dev": "nuxt",
-        "build": "nuxt build",
-        "start": "nuxt start",
-        "generate": "nuxt generate"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Knogobert/ntn-boilerplate#readme"
-    },
-    "dependencies": {
-        "@nuxt/content": "^1.14.0",
-        "nuxt": "^2.15.8",
-        "postcss-nested": "^5.0.6",
-        "postcss-nesting": "^10.1.4"
-    },
-    "devDependencies": {
-        "@nuxtjs/color-mode": "^3.0.0",
-        "@nuxtjs/pwa": "^3.3.5",
-        "@nuxtjs/svg": "^0.4.0",
-        "@nuxtjs/tailwindcss": "^5.0.0-4",
-        "eslint": "^8.2.0",
-        "eslint-config-prettier": "^8.3.0",
-        "eslint-plugin-prettier": "^4.0.0",
-        "netlify-cli": "^9.6.5",
-        "nuxt-purgecss": "^1.0.0",
-        "postcss": "^8.3.11",
-        "postcss-easing-gradients": "^3.0.1",
-        "postcss-preset-env": "^7.4.1",
-        "prettier": "^2.4.1",
-        "vue-content-placeholders": "^0.2.1"
-    }
+  "name": "brandon-dith-berry",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "Brandon Dith-Berry's Portfolio",
+  "author": "Brandon Dith-Berry <brandondithberry@gmail.com> (https://brandondithberry.com)",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Knogobert/ntn-boilerplate#readme"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.14.0",
+    "nuxt": "^2.15.8",
+    "postcss-nested": "^5.0.6",
+    "postcss-nesting": "^10.1.4"
+  },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^3.0.0",
+    "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/svg": "^0.4.0",
+    "@nuxtjs/tailwindcss": "^5.0.0-4",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "netlify-cli": "^9.6.5",
+    "nuxt-purgecss": "^1.0.0",
+    "postcss": "^8.3.11",
+    "postcss-easing-gradients": "^3.0.1",
+    "postcss-preset-env": "^7.4.1",
+    "prettier": "^2.4.1",
+    "vue-content-placeholders": "^0.2.1"
+  }
 }
