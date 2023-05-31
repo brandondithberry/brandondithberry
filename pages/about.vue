@@ -9,7 +9,7 @@
         </h3>
       </div>
     </section>
-    <section class="more">
+    <section class="more pb-32">
       <div class="container">
         <p>
           I started developing websites in high school. One of my clients during that time was a creative agency. They
@@ -30,32 +30,6 @@
           challenges has been my forte for many years. I've enjoyed this journey and I can't wait to see what we can do
           together!
         </p>
-      </div>
-    </section>
-    <section class="cta">
-      <div class="container">
-        <h2>Have a project in mind?</h2>
-        <h4>
-          I'd love to chat and hear more about it. Use the button below to schedule a 30-minute discovery. I look
-          forward to meeting you!
-        </h4>
-        <!-- Google Calendar Appointment Scheduling begin -->
-        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet" />
-        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-        <script>
-          ;(function () {
-            var target = document.currentScript
-            window.addEventListener('load', function () {
-              calendar.schedulingButton.load({
-                url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3nI0ryGoKuNTMJaq4MRPeN-ctCA-yz07boQCl5FiDm2CaJlLHi-n1KoIfH-9H6X3YcubilgpCh?gv=true',
-                color: '#000000',
-                label: 'Book A Call',
-                target,
-              })
-            })
-          })()
-        </script>
-        <!-- end Google Calendar Appointment Scheduling -->
       </div>
     </section>
   </main>
