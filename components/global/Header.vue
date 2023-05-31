@@ -7,10 +7,11 @@
       <div class="header-menu">
         <nav>
           <ul class="header-menu-list">
-            <li><NuxtLink to="/">Work</NuxtLink></li>
+            <li><NuxtLink to="/">Featured Work</NuxtLink></li>
+            <li><a href="https://behance.net/brandondithberry" target="_blank">Design</a></li>
             <li><NuxtLink to="music">Music</NuxtLink></li>
             <li><NuxtLink to="about">About</NuxtLink></li>
-            <li><a href="https://linkedin.com/in/brandondithberry" target="_blank">Connect on LinkedIn</a></li>
+            <li><a href="https://linkedin.com/in/brandondithberry" target="_blank">LinkedIn</a></li>
           </ul>
         </nav>
       </div>

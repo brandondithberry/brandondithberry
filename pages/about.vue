@@ -22,13 +22,13 @@
           saying they were and still are one of the best in the business. I was responsible for spearheading complex
           technical solutions for common business operations challenges by building advanced automations.<br /><br />A
           rival agency poached me and hired me as a Senior Consultant where I helped startups to corportations implement
-          revenue operations using HubSpot. That actually didn't go too well and I within 7 months I left to join where
-          I am now, as the Manager of Revenue Operations at Zeni.<br /><br />I now live in Conroe, TX with my wife and 2
-          girls and another little one on the way. I still provide freelance marketing services on the side and I write
-          and produce music with my church, ZEALHOUSE. I also produce and write my own music under the moniker
-          Bravier.<br /><br />I love meeting new people and collaborating to make visions come to life. Solving complex
-          challenges has been my forte for many years. I've enjoyed this journey and I can't wait to see what we can do
-          together!
+          revenue operations using HubSpot. It didn't turn out to be a good culture fit so within 7 months I left to
+          join where I am now, as the Manager of Revenue Operations at Zeni.<br /><br />I now live in Conroe, TX with my
+          wife and 2 girls and another little one on the way. I still provide freelance marketing services on the side
+          and I write and produce music with my church, ZEALHOUSE. I also produce and write my own music under the
+          moniker Bravier.<br /><br />I love meeting new people and collaborating to make visions come to life. Solving
+          complex challenges has been my forte for many years. I've enjoyed this journey and I can't wait to see what we
+          can do together!
         </p>
       </div>
     </section>
