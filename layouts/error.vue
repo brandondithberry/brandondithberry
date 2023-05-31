@@ -1,17 +1,15 @@
 <template>
   <main>
-    <section>
+    <section class="flex flex-col place-content-center items-center py-28 px-6">
       <template v-if="error.statusCode === 404">
-        <h1 class="title">{{ error.message || 'Page Not Found' }}</h1>
-        <h2 class="subtitle">404</h2>
-        <p class="mb-4">Looks like you've followed a broken link or entered a URL that doesn't exist on this site.</p>
+        <h1>😱 Oops! You discovered a broken link.</h1>
+        <h3>Psst, this is a 400 error by the way.</h3>
       </template>
       <template v-else>
-        <h1 class="title">An error occurred</h1>
-        <p class="mb-4">Looks like you've followed a broken link or entered a URL that doesn't exist on this site.</p>
+        <h1 class="title">😱 Oops! You discovered a broken link.</h1>
       </template>
       <nav class="mt-12" aria-label="go to home">
-        <router-back to="/" class="block"/>
+        <NuxtLink to="/" class="btn">Go Back</NuxtLink>
       </nav>
     </section>
   </main>
@@ -20,6 +18,6 @@
 <script>
 export default {
   name: 'error',
-  props: ['error']
+  props: ['error'],
 }
 </script>

@@ -11,6 +11,11 @@
 
 <style lang="postcss" scoped>
 .footer {
-  @apply py-6;
+  @apply py-4;
+
+  p,
+  a {
+    @apply text-black !important;
+  }
 }
 </style>

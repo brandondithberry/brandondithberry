@@ -1,8 +1,8 @@
 /* Transitions */
 .page-enter-active,
 .page-leave-active {
-  transition-property: opacity;
-  @apply duration-200;
+  transition: all 5s ease;
+  @apply duration-300;
 }
 .page-enter,
 .page-leave-to {
@@ -13,24 +13,26 @@
 .slide-left-leave-active,
 .slide-right-enter-active,
 .slide-right-leave-active {
-  transition-property: height, opacity, transform;
-  transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 5s ease;
   overflow: hidden;
-  @apply duration-200;
+  @apply duration-300;
 }
 
 .slide-right-leave-active {
+  transition: all 5s ease;
   opacity: 0;
   transform: translate(2em, 0);
 }
 
 .slide-left-leave-active {
+  transition: all 5s ease;
   opacity: 0;
   transform: translate(-2em, 0);
 }
 
 .slide-left-enter,
 .slide-right-enter {
+  transition: all 5s ease;
   opacity: 0;
   transform: translate(0, 0);
 }

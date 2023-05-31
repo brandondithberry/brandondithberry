@@ -1,33 +1,33 @@
 <template>
   <main>
     <section class="hero-banner">
-      <h1 class="hero-text">Brandon Dith-Berry</h1>
+      <h1 class="hero-text">Hi, I'm Brandon Dith-Berry</h1>
       <h3>
-        revops manager @ <a class="underline" href="https://zeni.ai" target="_blank">zeni.ai</a> / designer & developer
-        / songwriter
+        <a class="underline" href="https://zeni.ai" target="_blank">zeni</a> revops manager, freelance marketing
+        specialist & music producer/songwriter
       </h3>
     </section>
-    <section class="portfolio-grid">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <a class="item item-2 h-[40rem]" href="https://thegaragerentals.com" target="_blank">
-          <div class="caption">
-            <h4>the garage rentals website →</h4>
-          </div>
-        </a>
-        <div class="grid gap-4">
-          <a class="item item-3 h-50%" href="https://applepierepair.com" target="_blank">
-            <div class="caption">
-              <h4>apple pie repair website →</h4>
-            </div>
-          </a>
-          <a class="item item-4 h-50%" href="https://genpluswv.com" target="_blank">
-            <div class="caption">
-              <h4>generators plus website →</h4>
-            </div>
+    <section class="portfolio-grid" id="work">
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="item item-1 h-[50rem]">
+          <a href="https://thegaragerentals.com" target="_blank">
+            <h4 class="caption">the garage rentals website →</h4>
           </a>
         </div>
-        <div class="grid gap-4">
-          <div class="quote h-50%">
+        <div class="grid">
+          <div class="item item-2">
+            <a href="https://applepierepair.com" target="_blank">
+              <h4 class="caption">apple pie repair website →</h4>
+            </a>
+          </div>
+          <div class="item item-3">
+            <a href="https://genpluswv.com" target="_blank">
+              <h4 class="caption">generators plus website →</h4>
+            </a>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="quote">
             <blockquote>
               <h4>
                 "We have had nothing but the very best experiences with Brandon. He has built a few sites for us, and
@@ -39,22 +39,20 @@
               <img src="img/thegaragelogo.png" alt="The Garage Logo" width="120" />
             </figcaption>
           </div>
-          <a
-            class="item item-5 h-50%"
-            href="https://www.behance.net/gallery/106024503/Cornerstone-Maine-Brand-Identity-Design-Website"
-            target="_blank"
-          >
-            <div class="caption">
-              <h4>cornerstone brand design →</h4>
-            </div>
+          <div class="item item-4">
+            <a
+              href="https://www.behance.net/gallery/106024503/Cornerstone-Maine-Brand-Identity-Design-Website"
+              target="_blank"
+            >
+              <h4 class="caption">cornerstone brand design →</h4>
+            </a>
+          </div>
+        </div>
+        <div class="item item-5 h-[50rem]">
+          <a href="https://zealhouse.church" target="_blank">
+            <h4 class="caption">zealhouse logo design →</h4>
           </a>
         </div>
-        <a class="item item-1 h-[40rem]" href="https://zealhouse.church" target="_blank">
-          <div class="caption">
-            <h4>zealhouse logo design →</h4>
-          </div>
-        </a>
-        <!-- Add more portfolio items as needed -->
       </div>
     </section>
     <section class="cta">
@@ -99,43 +97,38 @@
   @apply text-white;
 
   a {
-    @apply text-white;
+    @apply absolute text-white w-full h-full;
   }
 
   .item {
-    @apply p-6 saturate-0 shadow-lg;
+    @apply p-6 saturate-0;
     background-size: cover;
     background-position: center center;
-    transition: all 0.5s ease-in-out;
+    transition: filter 0.4s ease;
   }
 
-  a.item:hover {
+  .item:hover {
     @apply saturate-100;
-    transform: scale(0.98);
   }
 
   .item-1 {
-    background-image: url(./static/img/zealhouse.jpg);
-  }
-
-  .item-2 {
     background-image: url(./static/img/bolt.jpg);
   }
 
-  .item-3 {
+  .item-2 {
     background-image: url(./static/img/desk.jpg);
   }
 
-  .item-4 {
+  .item-3 {
     background-image: url(./static/img/genplus.jpg);
   }
 
-  .item-5 {
+  .item-4 {
     background-image: url(./static/img/cornerstone.jpg);
   }
 
-  .item-6 {
-    background-image: url(./static/img/perspective.jpg);
+  .item-5 {
+    background-image: url(./static/img/zealhouse.jpg);
   }
 }
 
@@ -154,7 +147,7 @@
 }
 
 .cta {
-  @apply flex flex-col mt-4 text-center py-20 border border-2 border-black w-full h-full place-content-center items-center;
+  @apply flex flex-col text-center py-28 w-full h-full place-content-center items-center;
 
   .container {
     @apply max-w-screen-sm;

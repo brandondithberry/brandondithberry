@@ -1,24 +1,37 @@
 <template>
   <header class="header">
     <div class="header-container">
-      <div class="header-menu header-menu--left">
-        <nav>
-          <ul class="header-menu-list">
-            <li><a href="/">Work</a></li>
-            <li><a href="https://open.spotify.com/artist/5nJDjIy1Ge6CrUl7THNjyN" target="_blank">Music</a></li>
-          </ul>
-        </nav>
-      </div>
       <div class="header-logo">
         <img src="img/logo.png" alt="Logo" />
       </div>
-      <div class="header-menu header-menu--right">
+      <div class="header-menu">
         <nav>
           <ul class="header-menu-list">
-            <li><a href="#">About</a></li>
-            <li><a href="https://calendar.app.google/eAkxP4BTiRYuW8db6" target="_blank">Book A Call</a></li>
+            <li><NuxtLink to="/">Work</NuxtLink></li>
+            <li><NuxtLink to="music">Music</NuxtLink></li>
+            <li><NuxtLink to="about">About</NuxtLink></li>
+            <li><a href="https://linkedin.com/in/brandondithberry" target="_blank">Connect on LinkedIn</a></li>
           </ul>
         </nav>
+      </div>
+      <div class="header-cta">
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet" />
+        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+        <script>
+          ;(function () {
+            var target = document.currentScript
+            window.addEventListener('load', function () {
+              calendar.schedulingButton.load({
+                url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3nI0ryGoKuNTMJaq4MRPeN-ctCA-yz07boQCl5FiDm2CaJlLHi-n1KoIfH-9H6X3YcubilgpCh?gv=true',
+                color: '#000000',
+                label: 'Book A Call',
+                target,
+              })
+            })
+          })()
+        </script>
+        <!-- end Google Calendar Appointment Scheduling -->
       </div>
     </div>
   </header>
@@ -26,30 +39,22 @@
 
 <style lang="postcss" scoped>
 .header {
-  @apply py-4;
+  @apply py-6 bg-white;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   font-size: 1.2rem;
 }
 
 .header-container {
-  @apply container mx-auto flex items-center;
+  @apply container mx-auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-menu {
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.header-menu--left {
-  @apply pr-10;
-  justify-content: flex-end;
-}
-
-.header-menu--right {
-  @apply pl-10;
-  justify-content: flex-start;
+  @apply flex place-content-center items-center;
 }
 
 .header-menu-list {
