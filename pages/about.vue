@@ -8,6 +8,7 @@
           currently living near Houston, Texas.
         </h3>
       </div>
+      <NuxtLink class="btn mt-8" to="/">View Work</NuxtLink>
     </section>
     <section class="more pb-32">
       <div class="container">
@@ -37,7 +38,7 @@
 
 <style lang="postcss" scoped>
 .hero-banner {
-  @apply py-28 flex flex-col items-center justify-center text-center;
+  @apply py-28 px-8 flex flex-col items-center justify-center text-center;
 
   .hero-text {
     @apply max-w-screen-md;
@@ -49,7 +50,7 @@
 }
 
 .more {
-  @apply flex flex-col place-content-center items-center;
+  @apply flex flex-col place-content-center items-center p-8;
 
   .container {
     @apply max-w-screen-sm text-center;

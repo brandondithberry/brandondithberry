@@ -6,6 +6,7 @@
         <a class="underline" href="https://zeni.ai" target="_blank">Zeni</a> RevOps Manager, Freelance Marketing
         Specialist & Music Producer/Songwriter
       </h3>
+      <NuxtLink class="btn mt-8" to="about">Learn More</NuxtLink>
     </section>
     <section class="portfolio">
       <div class="grid">
