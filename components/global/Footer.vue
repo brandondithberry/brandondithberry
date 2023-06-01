@@ -37,7 +37,7 @@
 
 <style lang="postcss" scoped>
 .footer {
-  @apply py-8 bg-black text-white;
+  @apply p-8 bg-black text-white;
 
   .cta {
     @apply flex flex-col text-center py-28 w-full h-full place-content-center items-center;

@@ -2,13 +2,12 @@
   <header class="header">
     <div class="header-container">
       <div class="header-logo">
-        <img src="img/logo.png" alt="Logo" />
+        <NuxtLink to="/"><img src="img/logo.png" alt="Logo" /></NuxtLink>
       </div>
       <div class="header-menu">
         <nav>
           <ul class="header-menu-list">
             <li><NuxtLink to="/">Featured Work</NuxtLink></li>
-            <li><a href="https://behance.net/brandondithberry" target="_blank">Design</a></li>
             <li><NuxtLink to="music">Music</NuxtLink></li>
             <li><NuxtLink to="about">About</NuxtLink></li>
             <li><a href="https://linkedin.com/in/brandondithberry" target="_blank">LinkedIn</a></li>
@@ -40,7 +39,7 @@
 
 <style lang="postcss" scoped>
 .header {
-  @apply py-6 bg-white;
+  @apply p-6 bg-white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,7 +54,7 @@
 }
 
 .header-menu {
-  @apply flex place-content-center items-center;
+  @apply hidden place-content-center items-center md:flex;
 }
 
 .header-menu-list {
