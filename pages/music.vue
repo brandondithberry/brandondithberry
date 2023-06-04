@@ -3,6 +3,10 @@
     <section class="hero-banner">
       <h1 class="hero-text">Music Producer / Songwriter</h1>
       <h3>for <a href="https://zealhouse.church" target="_blank">ZEALHOUSE Worship</a> & solo as Bravier</h3>
+      <div class="btns">
+        <NuxtLink class="btn" to="/">View Work</NuxtLink>
+        <NuxtLink class="btn" to="about">Learn More</NuxtLink>
+      </div>
     </section>
     <section class="spotify">
       <div class="container">

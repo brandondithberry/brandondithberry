@@ -39,30 +39,43 @@
 
 <style lang="postcss" scoped>
 .header {
-  @apply p-6 bg-white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.2rem;
-}
+  @apply p-4 text-lg;
 
-.header-container {
-  @apply container mx-auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .header-container {
+    @apply flex max-w-screen-lg place-content-between place-items-stretch mx-auto;
+  }
 
-.header-menu {
-  @apply hidden place-content-center items-center md:flex;
-}
+  .header-logo {
+    @apply flex;
 
-.header-menu-list {
-  @apply flex space-x-8;
-}
+    img {
+      width: 70px;
+      height: auto;
+    }
+  }
 
-.header-logo img {
-  width: 100%;
-  height: 50px;
+  .header-menu {
+    display: none;
+    place-content: center;
+    align-items: center;
+
+    .header-menu-list {
+      display: flex;
+
+      li:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  .header-cta {
+    @apply flex;
+  }
+
+  @media (min-width: 768px) {
+    .header-menu {
+      display: flex;
+    }
+  }
 }
 </style>

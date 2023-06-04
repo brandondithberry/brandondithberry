@@ -8,7 +8,10 @@
           currently living near Houston, Texas.
         </h3>
       </div>
-      <NuxtLink class="btn mt-8" to="/">View Work</NuxtLink>
+      <div class="btns">
+        <NuxtLink class="btn" to="/">View Work</NuxtLink>
+        <NuxtLink class="btn" to="music">View Music</NuxtLink>
+      </div>
     </section>
     <section class="more pb-32">
       <div class="container">

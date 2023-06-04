@@ -1,5 +1,5 @@
-site_url: https://ntn-boilerplate.netlify.app/
-logo_url: https://ntn-boilerplate.netlify.app/icon.png
+site_url: https://brandondithberry.com
+logo_url: https://brandondithberry.com/favicon.png
 
 backend:
   name: git-gateway

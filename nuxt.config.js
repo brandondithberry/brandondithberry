@@ -6,7 +6,6 @@ export default {
   generate: {
     fallback: true,
   },
-  // ? The env Property: https://nuxtjs.org/api/configuration-env/
   env: {
     url:
       process.env.NODE_ENV === 'production'
@@ -14,12 +13,63 @@ export default {
         : 'http://localhost:3000',
     lang: SITE_INFO.sitelang || 'en-US',
   },
-  app: {
-    pageTransition: { name: 'page', mode: 'out-in' },
+  loading: { color: '#526488' },
+  css: ['@/assets/css/main.pcss'],
+  buildModules: ['@nuxtjs/color-mode', '@nuxtjs/tailwindcss', '@nuxtjs/svg', '@nuxtjs/pwa'],
+  modules: ['@nuxt/content', 'nuxt-purgecss'],
+  build: {
+    extractCSS: true,
+    postcss: {
+      plugins: {
+        'postcss-import': true,
+        'tailwindcss/nesting': {},
+        'postcss-nested': {},
+      },
+    },
+    extend(config, { isDev }) {
+      if (!isDev) {
+        // Optimize asset loading for production
+        config.splitChunks.cacheGroups = {
+          vendor: {
+            test: /[\\/]node_modules[\\/]/,
+            name: 'vendors',
+            chunks: 'all',
+          },
+        }
+      }
+    },
   },
-  /*
-   ** Headers of the page
-   */
+  content: {
+    dir: 'content',
+  },
+  tailwindcss: {
+    viewer: false,
+    cssPath: '~/assets/css/main.pcss',
+    exposeConfig: false,
+  },
+  purgeCSS: {
+    mode: 'postcss',
+    safelist: {
+      deep: [/dark/, /btn/, /icon/, /main/],
+      greedy: [/^card/, /image$/, /title$/, /^nuxt-content/, /code/, /pre/, /token/, /^vue-content-placeholders/],
+    },
+  },
+  pwa: {
+    icon: {
+      source: 'static/favicon.png',
+      fileName: 'favicon.png',
+    },
+    manifest: {
+      name: SITE_INFO.sitename || process.env.npm_package_name || '',
+      lang: process.env.lang,
+    },
+    meta: {
+      name: SITE_INFO.sitename || process.env.npm_package_name || '',
+      lang: process.env.lang,
+      ogHost: process.env.URL,
+      ogImage: '/preview.jpg',
+    },
+  },
   head: {
     title: SITE_INFO.sitename || process.env.npm_package_name || '',
     meta: [
@@ -48,7 +98,7 @@ export default {
         media: 'print',
         onload: `this.media='all'`,
       },
-    ], // ? Imports the font 'Inter', can be optimized by the netlify plugin 'Subfont' by uncommenting it in `netlify.toml`
+    ],
     noscript: [
       {
         innerHTML:
@@ -56,72 +106,5 @@ export default {
       },
     ],
     __dangerouslyDisableSanitizers: ['noscript'],
-  },
-  /*
-   ** Customize the progress-bar color
-   */
-  loading: { color: '#526488' },
-  /*
-   ** Global CSS
-   */
-  css: ['@/assets/css/main.pcss'],
-  /*
-   ** Nuxt.js dev-modules
-   */
-  buildModules: ['@nuxtjs/color-mode', '@nuxtjs/tailwindcss', '@nuxtjs/svg', '@nuxtjs/pwa'],
-  /*
-   ** Nuxt.js modules
-   */
-  modules: ['@nuxt/content', 'nuxt-purgecss'],
-  /*
-   ** Build configuration
-   */
-  build: {
-    extractCSS: true,
-    postcss: {
-      plugins: {
-        'postcss-import': true,
-        'tailwindcss/nesting': {},
-        'postcss-nested': {},
-      },
-    },
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, ctx) {},
-  },
-  /*
-   ** Custom additions configuration
-   */
-  // ? The content property: https://content.nuxtjs.org/configuration
-  content: {
-    dir: 'content',
-  },
-  tailwindcss: {
-    viewer: false, // disabled because it causes `Error: Cannot find module 'tailwindcss/resolveConfig'`, fixed in https://github.com/nuxt-community/tailwindcss-module/pull/303
-    cssPath: '~/assets/css/main.pcss',
-    exposeConfig: false, // enables `import { theme } from '~tailwind.config'`
-  },
-  purgeCSS: {
-    mode: 'postcss',
-    // ? Safelisting docs: https://purgecss.com/safelisting.html
-    safelist: {
-      // standard: [],
-      deep: [/dark/, /btn/, /icon/, /main/],
-      greedy: [/^card/, /image$/, /title$/, /^nuxt-content/, /code/, /pre/, /token/, /^vue-content-placeholders/],
-    },
-  },
-  pwa: {
-    icon: {
-      source: 'static/icon.png',
-      filename: 'icon.png',
-    },
-    manifest: { name: SITE_INFO.sitename || process.env.npm_package_name || '', lang: process.env.lang },
-    meta: {
-      name: SITE_INFO.sitename || process.env.npm_package_name || '',
-      lang: process.env.lang,
-      ogHost: process.env.URL,
-      ogImage: '/preview.jpg',
-    },
   },
 }
