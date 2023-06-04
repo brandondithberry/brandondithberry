@@ -1,4 +1,7 @@
-import * as SITE_INFO from './content/site/info.json'
+import { sitelang, sitename, sitedescription } from './content/site/info.json'
+
+const isProduction = process.env.NODE_ENV === 'production'
+const url = isProduction ? process.env.URL || 'http://createADotEnvFileAndSetURL' : 'http://localhost:3000'
 
 export default {
   target: 'static',
@@ -7,11 +10,8 @@ export default {
     fallback: true,
   },
   env: {
-    url:
-      process.env.NODE_ENV === 'production'
-        ? process.env.URL || 'http://createADotEnvFileAndSetURL'
-        : 'http://localhost:3000',
-    lang: SITE_INFO.sitelang || 'en-US',
+    url,
+    lang: sitelang || 'en-US',
   },
   loading: { color: '#526488' },
   css: ['@/assets/css/main.pcss'],
@@ -60,25 +60,25 @@ export default {
       fileName: 'favicon.png',
     },
     manifest: {
-      name: SITE_INFO.sitename || process.env.npm_package_name || '',
+      name: sitename || process.env.npm_package_name || '',
       lang: process.env.lang,
     },
     meta: {
-      name: SITE_INFO.sitename || process.env.npm_package_name || '',
+      name: sitename || process.env.npm_package_name || '',
       lang: process.env.lang,
       ogHost: process.env.URL,
       ogImage: '/preview.jpg',
     },
   },
   head: {
-    title: SITE_INFO.sitename || process.env.npm_package_name || '',
+    title: sitename || process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: SITE_INFO.sitedescription || process.env.npm_package_description || '',
+        content: sitedescription || process.env.npm_package_description || '',
       },
     ],
     link: [
