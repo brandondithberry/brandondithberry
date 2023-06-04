@@ -15,7 +15,7 @@ export default {
   },
   loading: { color: '#526488' },
   css: ['@/assets/css/main.pcss'],
-  buildModules: ['@nuxtjs/color-mode', '@nuxtjs/tailwindcss', '@nuxtjs/svg', '@nuxtjs/pwa'],
+  buildModules: ['@nuxtjs/tailwindcss', '@nuxtjs/svg', '@nuxtjs/pwa'],
   modules: ['@nuxt/content', 'nuxt-purgecss'],
   build: {
     extractCSS: true,
