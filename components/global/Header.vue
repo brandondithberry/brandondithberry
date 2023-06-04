@@ -7,7 +7,7 @@
       <div class="header-menu">
         <nav>
           <ul class="header-menu-list">
-            <li><NuxtLink to="/">Featured Work</NuxtLink></li>
+            <li><NuxtLink to="/">Work</NuxtLink></li>
             <li><NuxtLink to="music">Music</NuxtLink></li>
             <li><NuxtLink to="about">About</NuxtLink></li>
             <li><a href="https://linkedin.com/in/brandondithberry" target="_blank">LinkedIn</a></li>
@@ -16,7 +16,6 @@
       </div>
       <div class="header-cta">
         <!-- Google Calendar Appointment Scheduling begin -->
-        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet" />
         <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
         <script>
           ;(function () {
@@ -39,7 +38,7 @@
 
 <style lang="postcss" scoped>
 .header {
-  @apply p-4 text-lg;
+  @apply p-4 text-xl;
 
   .header-container {
     @apply flex max-w-screen-lg place-content-between place-items-stretch mx-auto;
@@ -63,13 +62,13 @@
       display: flex;
 
       li:not(:last-child) {
-        margin-right: 2rem;
+        margin-right: 3rem;
       }
     }
   }
 
   .header-cta {
-    @apply flex;
+    @apply flex text-lg;
   }
 
   @media (min-width: 768px) {
