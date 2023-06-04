@@ -26,18 +26,6 @@ export default {
         'postcss-nested': {},
       },
     },
-    extend(config, { isDev }) {
-      if (!isDev) {
-        // Optimize asset loading for production
-        config.splitChunks.cacheGroups = {
-          vendor: {
-            test: /[\\/]node_modules[\\/]/,
-            name: 'vendors',
-            chunks: 'all',
-          },
-        }
-      }
-    },
   },
   content: {
     dir: 'content',
