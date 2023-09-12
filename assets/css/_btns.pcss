@@ -10,6 +10,15 @@
 
   .btn {
     @apply text-center font-semibold rounded-full py-4 px-6 border border-2 border-gray-900 text-gray-900;
+
+    &.btn-white {
+      @apply border-white text-white;
+
+      &:hover {
+        @apply bg-white text-black !important;
+      }
+    }
+
     &:hover {
       @apply bg-gray-900 text-white;
     }

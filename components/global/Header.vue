@@ -15,22 +15,7 @@
         </nav>
       </div>
       <div class="header-cta">
-        <!-- Google Calendar Appointment Scheduling begin -->
-        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-        <script>
-          ;(function () {
-            var target = document.currentScript
-            window.addEventListener('load', function () {
-              calendar.schedulingButton.load({
-                url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3nI0ryGoKuNTMJaq4MRPeN-ctCA-yz07boQCl5FiDm2CaJlLHi-n1KoIfH-9H6X3YcubilgpCh?gv=true',
-                color: '#000000',
-                label: 'Book A Call',
-                target,
-              })
-            })
-          })()
-        </script>
-        <!-- end Google Calendar Appointment Scheduling -->
+        <a class="btn" href="https://internal.zeni.ai/meetings/bdb/ext-30" target="_blank">Book a Call</a>
       </div>
     </div>
   </header>

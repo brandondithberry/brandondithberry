@@ -1,0 +1,14 @@
+defaultPortal: Zeni
+portals:
+  - name: Zeni
+    portalId: 5991084
+    authType: personalaccesskey
+    auth:
+      tokenInfo:
+        accessToken: >-
+          COOHt82oMRITAA0AAAAA4E0DQAIAAGAAAAAAwBis1e0CIOvS1xYo7ukMMhRv2HNoD0iuB0F_kS3R0EqCTvcdEjo6AAAEQQAAAHgAAAAAAAAAAAAAAAAAAAAEAADABwD-_zE8AEAGAEQAYAAAAAAAAAwAAAAAAAAwAgAAwEIUHNtIxvi0YecjAN7qjJjJUh_B50VKA25hMVIAWgA
+        expiresAt: '2023-09-12T13:56:21.113Z'
+    personalAccessKey: >-
+      CiQwNDVhN2JkMi0wNjkxLTQzMGEtYmMzZi05YTQzMjlmM2Q5MjAQrNXtAhjr0tcWKhkABeaRghzd3hTSshbwNiiq0JyeU99KRxUMSgNuYTE
+    sandboxAccountType: null
+    parentAccountId: null
