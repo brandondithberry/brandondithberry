@@ -7,7 +7,7 @@
           I'd love to chat and hear more about it. Use the button below to schedule a 30-minute discovery. I look
           forward to meeting you!
         </h4>
-        <a class="btn btn-white" href="https://internal.zeni.ai/meetings/bdb/ext-30" target="_blank">Book a Call</a>
+        <a class="btn btn-white" href="https://internal.zeni.ai/meetings/brandon772" target="_blank">Book a Call</a>
       </div>
     </section>
     <div class="container mx-auto">
